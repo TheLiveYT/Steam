@@ -3173,7 +3173,7 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
   z-index: unset;
 }
 .profilePanel_b433b4:not(:has(svg div[style*=image])) .overlayBackground_c69a7b {
-  --header-height: 112px;
+  --header-height: 30px;
   margin-top: var(--header-height);
 }
 .profilePanel_b433b4 .avatarPositionPanel_f89da9 {
@@ -3218,6 +3218,9 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
 }
 .profilePanel_b433b4 .profilePanelConnections_b433b4 button svg {
   color: var(--brand-experiment);
+}
+.profilePanel_b433b4 .mutualFriendsDivider_b433b4 {
+  border-top: none;
 }
 .profilePanel_b433b4:has(.containerWithContent_b64375) .overlayBackground_c69a7b:has(.memberSinceContainer__16630) {
   padding-top: 38px;
