@@ -115,13 +115,6 @@
   --info-positive-foreground: var(--gpColor-Green);
   --info-danger-foreground: var(--gpColor-Red);
   --text-positive: var(--gpColor-Green);
-  --gpColor-Green: #5ba32b;
-  --gpColor-GreenHi: #59BF40;
-  --gpColor-GreenHi-hsl: 108 49.8% 50.0%;
-  --gpColor-Red: #D94126;
-  --gpColor-Yellow: #FFC82C;
-  --gpColor-Grey: #4f5159;
-}
 
 #app-mount:has(.themeEditor_c9dda6) {
   --theme-preview-width: 260px;
