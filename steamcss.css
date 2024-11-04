@@ -1772,6 +1772,24 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
 .chat_a7d72e.scrollerContainer_c6b11b .scroller_c6b11b .pageBody_c6b11b > div:first-child:not([class]) h2 {
   font-weight: 400;
 }
+.chat_a7d72e.scrollerContainer_c6b11b .profile_c6b11b > h2 {
+  padding-top: 10px;
+  font-weight: 400;
+}
+.chat_a7d72e.scrollerContainer_c6b11b .profile_c6b11b > [data-text-variant="text-xs/normal"] {
+  padding-bottom: 10px;
+}
+.chat_a7d72e.scrollerContainer_c6b11b .profileCard_c6b11b {
+  margin-top: 0;
+  width: 308px;
+  background: var(--store-sidebar-background);
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.chat_a7d72e.scrollerContainer_c6b11b .profileCard_c6b11b .role_c6b11b {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
 
 .prompt_c6b11b {
   gap: 0;
@@ -3138,6 +3156,80 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
   height: 100%;
 }
 
+.profilePanel_b433b4 {
+  margin-left: var(--content-gutter);
+}
+.profilePanel_b433b4 .bannerSVGWrapper_b32cc2:not(:has([style*=image])) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: unset;
+}
+.profilePanel_b433b4:not(:has(svg div[style*=image])) .overlayBackground_c69a7b {
+  --header-height: 112px;
+  margin-top: var(--header-height);
+}
+.profilePanel_b433b4 .avatarPositionPanel_f89da9 {
+  top: 16px;
+}
+.profilePanel_b433b4 .userPanelInner_c69a7b:before {
+  height: 100%;
+  width: 100%;
+}
+.profilePanel_b433b4 .badgelistGroup_ab525a {
+  position: absolute;
+  top: calc(var(--banner-height, 108px) + 2px + 16px);
+  left: 0;
+  width: 100%;
+  min-height: unset;
+  margin: 0;
+}
+.profilePanel_b433b4 .badgeList_ab525a {
+  width: 100%;
+  padding: 0;
+  gap: 4px;
+  z-index: 2;
+  background: none;
+  box-shadow: none;
+  justify-content: center;
+  min-height: unset;
+  margin: 0;
+}
+.profilePanel_b433b4 .overlayBackground_c69a7b ~ .overlayBackground_c69a7b:not(:empty, :has(.activity__20c1e)) {
+  margin: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 20px 10px 11px 10px;
+}
+.profilePanel_b433b4 .profilePanelConnections_b433b4 {
+  gap: 7px;
+}
+.profilePanel_b433b4 .profilePanelConnections_b433b4 > div {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.profilePanel_b433b4 .profilePanelConnections_b433b4 button svg {
+  color: var(--brand-experiment);
+}
+.profilePanel_b433b4 .mutualFriendsDivider_b433b4 {
+  border-top: none;
+}
+.profilePanel_b433b4:has(.containerWithContent_b64375) .overlayBackground_c69a7b:has(.memberSinceContainer__16630) {
+  padding-top: 38px;
+}
+.profilePanel_b433b4:has(.containerWithContent_b64375) .overlayBackground_c69a7b:has(.memberSinceContainer__16630):not(:has(.customStatusSection_d2b491)) {
+  padding-top: 54px;
+}
+.profilePanel_b433b4 .divider_e6f9ab {
+  display: none;
+}
+.profilePanel_b433b4 .section_d7a21f:has(.activity__20c1e) {
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0 -12px -12px;
+  padding: 12px;
+}
+
 .container_cbd271,
 .member_cbd271,
 .members_cbd271 {
@@ -4434,6 +4526,10 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
 .welcomeMessageContainer_a1289e .welcomeMessageContent_a1289e {
   padding: 4px 16px 16px;
   z-index: 1;
+}
+.welcomeMessageContainer_a1289e .userProfileOuter_c69a7b,
+.welcomeMessageContainer_a1289e .userProfileInner_c69a7b {
+  border-radius: 4px;
 }
 .welcomeMessageContainer_a1289e .userCardInner_c69a7b {
   border-radius: 4px;
@@ -6068,6 +6164,88 @@ body #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_c25c6d:has(.socialLinks_c
 .container_b6cd66 {
   border-radius: 4px;
 }
+
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .accountProfileCard_b69b77 {
+  max-width: 100% !important;
+}
+
+#app-mount .accountProfileCard_b69b77 {
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+}
+#app-mount .accountProfileCard_b69b77 .bannerSVGWrapper_b32cc2:not(:has([style*="/banners/"])) {
+  min-height: 1px !important;
+  min-width: 100% !important;
+  margin-bottom: -91px !important;
+}
+#app-mount .accountProfileCard_b69b77 .banner_c3e427:not([style^=background-image]) {
+  height: 1px;
+  min-height: 1px;
+  border-radius: 0;
+  -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0), transparent 75%);
+          mask-image: linear-gradient(to right, rgb(0, 0, 0), transparent 75%);
+}
+#app-mount .accountProfileCard_b69b77 .userInfo_b69b77 {
+  height: 72px;
+  align-items: center;
+  padding: 10px 0 0 87px;
+}
+#app-mount .accountProfileCard_b69b77 .avatar_b69b77 {
+  padding: 0;
+  top: unset;
+  margin: auto 0;
+  box-shadow: none;
+  height: 60px !important;
+  width: 60px !important;
+}
+#app-mount .accountProfileCard_b69b77 .avatar_b69b77 svg {
+  height: 70px !important;
+  width: 70px !important;
+}
+#app-mount .accountProfileCard_b69b77 .userTag_b69b77 {
+  margin: 0;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+#app-mount .accountProfileCard_b69b77 .overflowMenuButton_b69b77 {
+  margin-left: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+#app-mount .accountProfileCard_b69b77 .profileCardUsernameRow_b69b77,
+#app-mount .accountProfileCard_b69b77 .containerWithContent_b64375 {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  position: relative;
+}
+#app-mount .accountProfileCard_b69b77 .containerWithContent_b64375 {
+  margin-top: 0;
+}
+#app-mount .accountProfileCard_b69b77 .container_b64375 {
+  min-height: unset;
+}
+#app-mount .accountProfileCard_b69b77 .profileBadge22_b64375 {
+  width: 18px;
+  height: 18px;
+}
+#app-mount .accountProfileCard_b69b77 .background_b69b77 {
+  background: none !important;
+  box-shadow: none;
+  margin: 10px 0 0 0;
+  border-radius: 0;
+  padding: 10px 0;
+  border-top: thin solid var(--background-modifier-accent-dark);
+}
+
 .fieldList_b69b77 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -6150,6 +6328,7 @@ body #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_c25c6d:has(.socialLinks_c
   margin-right: 4px;
 }
 
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .profileCustomizationSection_bad983 .baseLayout_bad983 .preview_bad983 .userPopoutOuter_c69a7b,
 #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .baseLayout_bad983.tryItOutLayout_eb2d2c .preview_bad983 .userPopoutOuter_c69a7b {
   min-width: unset !important;
   width: 340px !important;
