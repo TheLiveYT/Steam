@@ -1772,6 +1772,13 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
 .chat_a7d72e.scrollerContainer_c6b11b .scroller_c6b11b .pageBody_c6b11b > div:first-child:not([class]) h2 {
   font-weight: 400;
 }
+.chat_a7d72e.scrollerContainer_c6b11b .profile_c6b11b > h2,
+.chat_a7d72e.scrollerContainer_c6b11b .profile_c6b11b > [data-text-variant="text-xs/normal"] {
+  background: var(--store-sidebar-background);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 18px;
+  padding-right: 18px;
+}
 .chat_a7d72e.scrollerContainer_c6b11b .profile_c6b11b > h2 {
   padding-top: 10px;
   font-weight: 400;
@@ -3211,9 +3218,6 @@ body #app-mount:-webkit-full-screen .app_bd26cc .base_a4d4d9 {
 }
 .profilePanel_b433b4 .profilePanelConnections_b433b4 button svg {
   color: var(--brand-experiment);
-}
-.profilePanel_b433b4 .mutualFriendsDivider_b433b4 {
-  border-top: none;
 }
 .profilePanel_b433b4:has(.containerWithContent_b64375) .overlayBackground_c69a7b:has(.memberSinceContainer__16630) {
   padding-top: 38px;
