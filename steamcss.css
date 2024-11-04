@@ -12965,39 +12965,6 @@ video:has([src="/assets/b6508869eb1b93a8e54729ac86985599.png"]) {
   display: none;
 }
 
-.accountProfilePopoutWrapper_b2ca13 .overlayBackground_c69a7b .divider_ad5fac {
-  display: none;
-}
-.accountProfilePopoutWrapper_b2ca13 .overlayBackground_c69a7b .scroller_d2b491 {
-  max-height: 200px;
-  padding-bottom: 16px;
-}
-.accountProfilePopoutWrapper_b2ca13 .overlayBackground_c69a7b > .menu_d90b3d {
-  box-shadow: none;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 8px;
-  border-radius: 5px;
-  width: calc(100% - 24px - 16px);
-  max-width: unset;
-  min-width: unset;
-  margin-left: 12px;
-  margin-bottom: 12px;
-  box-sizing: content-box;
-}
-.accountProfilePopoutWrapper_b2ca13 .overlayBackground_c69a7b .section_d7a21f:has(.memberSinceContainer__16630) {
-  padding-bottom: 12px;
-}
-.accountProfilePopoutWrapper_b2ca13 [aria-activedescendant*=account-status-picker] {
-  max-width: 200px;
-}
-.accountProfilePopoutWrapper_b2ca13 .statusItem_ad5fac {
-  padding: 0;
-  min-height: unset;
-}
-.accountProfilePopoutWrapper_b2ca13 .statusItem_ad5fac .description_ad5fac {
-  margin-bottom: 0;
-  color: var(--text-muted);
-}
 
 .themeEditor_c9dda6 {
   background: var(--background-tertiary);
